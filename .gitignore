@@ -1,0 +1,4 @@
+video/*
+logs/*
+*.html
+temp/*

@@ -1,4 +1,4 @@
-describe('My First Test', () => {
+describe('Valida Abertura de Mapa do Google ao abrir "Onde usar meu cartão"', () => {
   it('clicking "type" navigates to a new url', () => {
     cy.visit('/')
 
