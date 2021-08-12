@@ -5,11 +5,13 @@ end
 
 Quando("verifico sucesso do GET") do
   #Imprimindo o body apenas para efeiteo de visualização
+  puts @get_infos["typeOfEstablishment"][rand("typeOfEstablishment".length)]
   puts @get_infos.body
   #Imprimindo a quantidade de registros retornados
   puts "Quantidade de registros do retorno: " +@get_infos.size.to_s
   #Checando o status code do retorno
-    expect(@get_infos.code).to eq 200
+  expect(@get_infos.code).to eq 200
+    
 end
 
 Entao("confirmo que o retorno do GET tem o campo typeOfEstablishment") do
